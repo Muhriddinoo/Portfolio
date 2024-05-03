@@ -1,0 +1,79 @@
+#about {
+  width: 100%;
+  height: auto;
+  background: var(--second-bg-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#about .about-inner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about-inner .heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.heading span {
+  color: var(--main-color);
+}
+.about-inner .about-img {
+  position: relative;
+  width: 240px;
+  /* background-color: var(--main-color); */
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.2rem solid var(--second-bg-color);
+  border-bottom: 0.2rem solid var(--second-bg-color);
+  border-left: 0.2rem solid var(--main-color);
+  border-right: 0.2rem solid var(--main-color);
+  animation-name: example;
+  animation-duration: 5s;
+  transition: 0.5s;
+}
+.about-img .circle-spin:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.2rem solid var(--main-color);
+  border-bottom: 0.2rem solid var(--main-color);
+  border-left: 0.2rem solid var(--second-bg-color);
+  border-right: 0.2rem solid var(--second-bg-color);
+}
+.about-img img {
+  width: 200px;
+  border-radius: 50%;
+  background: var(--main-color);
+  border: 3px solid var(--main-color);
+}
+.about-inner .about-text {
+  text-align: center;
+}
+.about-text h3 {
+  font-size: 2rem;
+}
+.about-text p {
+  font-size: 1.6rem;
+  margin: 1rem 0 2rem;
+}

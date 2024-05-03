@@ -1,0 +1,134 @@
+@import url("http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+}
+.container {
+  width: 1260px;
+  margin: 0 auto;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .links {
+    display: none;
+  }
+  /* .navbar .navbar-inner {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    background-color: var(--bg-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  } */
+  .navbar-inner a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .navbar .navbar-inner #menu-icon {
+    display: block;
+  }
+
+  .main .main-inner .main-img img {
+    width: 300px;
+  }
+  .main-img {
+    width: 100px;
+  }
+  .about-text p {
+    width: 90%;
+    text-align: center;
+    position: relative;
+    left: 50px;
+  }
+  .skills {
+    width: 90%;
+  }
+  .skills-box {
+    width: 90%;
+  }
+  .skills-content {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .links {
+    display: none;
+  }
+  /* .navbar .navbar-inner {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    background-color: var(--bg-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  } */
+  .navbar-inner a {
+    display: block;
+    /* font-size: 2rem; */
+    margin: 3rem 0;
+  }
+  .navbar .navbar-inner #menu-icon {
+    display: block;
+  }
+  .main {
+    height: auto;
+  }
+  .main .main-inner {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .main .main-inner .main-img img {
+    width: 300px;
+  }
+  .main-img {
+    width: 100px;
+  }
+  .about {
+    height: auto;
+  }
+  .about .about-inner {
+    height: auto;
+    margin-top: 100px;
+  }
+  .about-text p {
+    width: 90%;
+    text-align: center;
+    position: relative;
+    left: 15px;
+  }
+  .skills {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .skills-box {
+    width: 90%;
+  }
+  .skills-content {
+    width: 90%;
+  }
+}

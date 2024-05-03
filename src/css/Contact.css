@@ -1,0 +1,86 @@
+#contact {
+  width: 100%;
+  height: auto;
+}
+#contact .contact-inner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-inner .heading {
+  font-size: 2.6rem;
+}
+.contact-inner form {
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-inner form .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-inner form .input-box .input-field {
+  position: relative;
+  width: 100%;
+  margin: 0.8rem;
+}
+.contact-inner form .input-box .input-field input,
+.contact-inner form .textarea-field textarea {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  color: var(--text-color);
+  background-color: transparent;
+  border: 0.2rem solid var(--main-color);
+}
+.contact-inner form .input-box .input-field input::placeholder,
+.contact-inner form .textarea-field textarea::placeholder {
+  color: var(--text-color);
+}
+.contact-inner form .focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--second-bg-color);
+  z-index: -1;
+  border-radius: 20px;
+}
+.contact-inner form .input-box .input-field input:focus ~ .focus,
+.contact-inner form .input-box .input-field input:valid ~ .focus,
+.contact-inner form .textarea-field textarea :focus ~ .focus,
+.contact-inner form .textarea-field textarea :valid ~ .focus {
+  width: 100%;
+}
+.contact-inner form .textarea-field {
+  position: relative;
+  margin: 0.8rem 0 2.7rem;
+  display: flex;
+}
+.contact-inner form .textarea-field textarea {
+  resize: none;
+}
+.contact-inner form .btn-box.btns .btn {
+  cursor: pointer;
+}
+form .one {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.one .bosin {
+  width: 20px;
+  height: 20px;
+}
+.one span {
+  font-size: 1.3rem;
+}
